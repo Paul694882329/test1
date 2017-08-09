@@ -15,6 +15,9 @@
 		B39DBEF71F38407F005102BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B39DBEF51F38407F005102BB /* LaunchScreen.storyboard */; };
 		B39DBF021F38407F005102BB /* test1Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = B39DBF011F38407F005102BB /* test1Tests.m */; };
 		B39DBF0D1F38407F005102BB /* test1UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B39DBF0C1F38407F005102BB /* test1UITests.m */; };
+		B39DBF1F1F38523F005102BB /* PhotoController.m in Sources */ = {isa = PBXBuildFile; fileRef = B39DBF1E1F38523F005102BB /* PhotoController.m */; };
+		B39DBF261F38528D005102BB /* PhotoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B39DBF241F38528D005102BB /* PhotoCell.m */; };
+		B39DBF271F38528D005102BB /* PhotoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B39DBF251F38528D005102BB /* PhotoCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,11 @@
 		B39DBF081F38407F005102BB /* test1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = test1UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B39DBF0C1F38407F005102BB /* test1UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = test1UITests.m; sourceTree = "<group>"; };
 		B39DBF0E1F38407F005102BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B39DBF1D1F38523F005102BB /* PhotoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoController.h; sourceTree = "<group>"; };
+		B39DBF1E1F38523F005102BB /* PhotoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoController.m; sourceTree = "<group>"; };
+		B39DBF231F38528D005102BB /* PhotoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoCell.h; sourceTree = "<group>"; };
+		B39DBF241F38528D005102BB /* PhotoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoCell.m; sourceTree = "<group>"; };
+		B39DBF251F38528D005102BB /* PhotoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PhotoCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +113,11 @@
 				B39DBEEB1F38407F005102BB /* AppDelegate.m */,
 				B39DBEED1F38407F005102BB /* ViewController.h */,
 				B39DBEEE1F38407F005102BB /* ViewController.m */,
+				B39DBF1D1F38523F005102BB /* PhotoController.h */,
+				B39DBF1E1F38523F005102BB /* PhotoController.m */,
+				B39DBF231F38528D005102BB /* PhotoCell.h */,
+				B39DBF241F38528D005102BB /* PhotoCell.m */,
+				B39DBF251F38528D005102BB /* PhotoCell.xib */,
 				B39DBEF01F38407F005102BB /* Main.storyboard */,
 				B39DBEF31F38407F005102BB /* Assets.xcassets */,
 				B39DBEF51F38407F005102BB /* LaunchScreen.storyboard */,
@@ -249,6 +262,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B39DBF271F38528D005102BB /* PhotoCell.xib in Resources */,
 				B39DBEF71F38407F005102BB /* LaunchScreen.storyboard in Resources */,
 				B39DBEF41F38407F005102BB /* Assets.xcassets in Resources */,
 				B39DBEF21F38407F005102BB /* Main.storyboard in Resources */,
@@ -277,7 +291,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				B39DBEEF1F38407F005102BB /* ViewController.m in Sources */,
+				B39DBF261F38528D005102BB /* PhotoCell.m in Sources */,
 				B39DBEEC1F38407F005102BB /* AppDelegate.m in Sources */,
+				B39DBF1F1F38523F005102BB /* PhotoController.m in Sources */,
 				B39DBEE91F38407F005102BB /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -516,6 +532,7 @@
 				B39DBF131F38407F005102BB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B39DBF141F38407F005102BB /* Build configuration list for PBXNativeTarget "test1Tests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +541,7 @@
 				B39DBF161F38407F005102BB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B39DBF171F38407F005102BB /* Build configuration list for PBXNativeTarget "test1UITests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +550,7 @@
 				B39DBF191F38407F005102BB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

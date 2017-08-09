@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="PhotoCell">
+            <rect key="frame" x="0.0" y="0.0" width="158" height="131"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="158" height="131"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="oP9-dM-8ge">
+                        <rect key="frame" x="0.0" y="0.0" width="158" height="131"/>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pyq-w0-FhN">
+                        <rect key="frame" x="123" y="0.0" width="35" height="35"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="35" id="B2P-kF-y26"/>
+                            <constraint firstAttribute="width" constant="35" id="CxS-OD-RN8"/>
+                        </constraints>
+                        <state key="normal" image="bjql_gx2_icon_07"/>
+                        <state key="selected" image="bjql_gx_icon_07"/>
+                        <connections>
+                            <action selector="click:" destination="gTV-IL-0wX" eventType="touchUpInside" id="Hc3-tv-T4p"/>
+                        </connections>
+                    </button>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="Pyq-w0-FhN" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="GJc-Oe-GEU"/>
+                <constraint firstAttribute="bottom" secondItem="oP9-dM-8ge" secondAttribute="bottom" id="YjV-aM-R8q"/>
+                <constraint firstItem="oP9-dM-8ge" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="hYP-qy-EIO"/>
+                <constraint firstAttribute="trailing" secondItem="oP9-dM-8ge" secondAttribute="trailing" id="l1D-eQ-scF"/>
+                <constraint firstItem="oP9-dM-8ge" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="pzW-lR-eqY"/>
+                <constraint firstAttribute="trailing" secondItem="Pyq-w0-FhN" secondAttribute="trailing" id="rmr-YO-zrX"/>
+            </constraints>
+            <size key="customSize" width="158" height="131"/>
+            <connections>
+                <outlet property="btnCheck" destination="Pyq-w0-FhN" id="hbI-ZF-kwX"/>
+                <outlet property="imageView" destination="oP9-dM-8ge" id="omO-xs-HwK"/>
+            </connections>
+            <point key="canvasLocation" x="79" y="92.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="bjql_gx2_icon_07" width="59" height="59"/>
+        <image name="bjql_gx_icon_07" width="59" height="59"/>
+    </resources>
+</document>
